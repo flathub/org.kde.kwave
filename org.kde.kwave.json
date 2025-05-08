@@ -24,7 +24,10 @@
         {
             "name": "libaudiofile",
             "buildsystem": "autotools",
-            "config-opts": ["--disable-docs", "--disable-examples"],
+            "config-opts": [
+                "--disable-docs",
+                "--disable-examples"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -32,12 +35,16 @@
                     "commit": "b62c902dd258125cac86cd2df21fc898035a43d3"
                 }
             ],
-            "cleanup": ["/bin"]
+            "cleanup": [
+                "/bin"
+            ]
         },
         {
             "name": "id3lib",
             "buildsystem": "autotools",
-            "config-opts": ["--disable-static"],
+            "config-opts": [
+                "--disable-static"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -64,32 +71,38 @@
                 },
                 {
                     "type": "shell",
-                    "commands": ["cp -p /usr/share/automake-*/config.{sub,guess} ."]
+                    "commands": [
+                        "cp -p /usr/share/automake-*/config.{sub,guess} ."
+                    ]
                 }
             ],
-            "cleanup": ["/bin"]
+            "cleanup": [
+                "/bin"
+            ]
         },
         {
-            "name" : "libmad",
+            "name": "libmad",
             "buildsystem": "cmake-ninja",
             "sources": [
                 {
-                    "type" : "archive",
-                    "url" : "https://codeberg.org/tenacityteam/libmad/releases/download/0.16.4/libmad-0.16.4.tar.gz",
-                    "sha256" : "0f6bfb36c554075494b5fc2c646d08de7364819540f23bab30ae73fa1b5cfe65"
+                    "type": "archive",
+                    "url": "https://codeberg.org/tenacityteam/libmad/releases/download/0.16.4/libmad-0.16.4.tar.gz",
+                    "sha256": "0f6bfb36c554075494b5fc2c646d08de7364819540f23bab30ae73fa1b5cfe65"
                 }
             ]
         },
         {
             "name": "kwave",
             "buildsystem": "cmake-ninja",
-            "config-opts": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"],
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "builddir": true,
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/kwave-25.04.0.tar.xz",
-                    "sha256": "864a3cb973d96046bba909df46128e7a7429a72cbffd37ecd5930fb3dddb5a63",
+                    "url": "https://download.kde.org/stable/release-service/25.04.1/src/kwave-25.04.1.tar.xz",
+                    "sha256": "1e9074f814006a7c183febf56a40423a7e8e834635194279cdde0d0b47b89333",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
