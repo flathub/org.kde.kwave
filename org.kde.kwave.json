@@ -101,8 +101,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.1/src/kwave-25.04.1.tar.xz",
-                    "sha256": "1e9074f814006a7c183febf56a40423a7e8e834635194279cdde0d0b47b89333",
+                    "url": "https://download.kde.org/stable/release-service/25.04.2/src/kwave-25.04.2.tar.xz",
+                    "sha256": "1008bb46a0370d833dd6551d3c4db97ca39224d164f6de31ecc45e06d03dcd8e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
