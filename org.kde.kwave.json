@@ -1,7 +1,7 @@
 {
     "id": "org.kde.kwave",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "kwave",
     "finish-args": [
@@ -21,6 +21,7 @@
         "*.a"
     ],
     "modules": [
+        "shared-modules/libmad/libmad.json",
         {
             "name": "libaudiofile",
             "buildsystem": "autotools",
@@ -78,17 +79,6 @@
             ],
             "cleanup": [
                 "/bin"
-            ]
-        },
-        {
-            "name": "libmad",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://codeberg.org/tenacityteam/libmad/releases/download/0.16.4/libmad-0.16.4.tar.gz",
-                    "sha256": "0f6bfb36c554075494b5fc2c646d08de7364819540f23bab30ae73fa1b5cfe65"
-                }
             ]
         },
         {
