@@ -16,6 +16,7 @@
         "/include",
         "/lib/cmake",
         "/lib/pkgconfig",
+        "/share/doc",
         "/share/man",
         "*.la",
         "*.a"
